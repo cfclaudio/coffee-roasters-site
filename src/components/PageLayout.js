@@ -7,7 +7,9 @@ export default function PageLayout({ children }) {
   return (
     <>
       <Navigation />
-      <Box as="main">{children}</Box>
+      <Box as="main" sx={{ width: "100%" }}>
+        {children}
+      </Box>
       <Footer />
     </>
   );

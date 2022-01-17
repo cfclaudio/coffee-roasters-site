@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { PageLayout } from "components";
+import Section from "components/Section";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <title>Coffee Roasters | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PageLayout>Great Coffee made simple.</PageLayout>
+      <PageLayout>
+        <Section sx={{ bg: "pink" }}>Hello</Section>
+      </PageLayout>
     </div>
   );
 }

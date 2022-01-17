@@ -1,4 +1,11 @@
+const pageMargin = ["1.5em", "2em", "50px"];
+
 export default {
+  breakpoints: [
+    // "@media screen and (max-width: 480px)",
+    "@media screen and (min-width: 768px)",
+    "@media screen and (min-width: 1440px)",
+  ], // [mobile, tablet, desktop]
   fonts: {
     body: "system-ui, sans-serif",
     heading: '"Avenir Next", sans-serif',
@@ -14,12 +21,16 @@ export default {
     lightGrey: "#F4F1EB",
   },
   sections: {
+    default: {
+      bg: ["pink", "blue", "purple"], // for testing
+      mx: pageMargin,
+    },
     navigation: {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      width: "100%",
       my: "2em",
+      mx: pageMargin,
     },
     navLinks: {
       display: "flex",
@@ -31,13 +42,13 @@ export default {
     },
     footer: {
       display: "flex",
-      width: "100%",
       justifyContent: "space-between",
       alignItems: "center",
       bg: "secondary",
       color: "white",
       px: 80,
       py: 30,
+      mx: pageMargin,
     },
   },
 };
