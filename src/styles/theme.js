@@ -26,7 +26,18 @@ export default {
       ">:not(:last-child)": { mr: "3em" },
       ">.nav-link": {
         textTransform: "uppercase",
+        color: "grey",
       },
+    },
+    footer: {
+      display: "flex",
+      width: "100%",
+      justifyContent: "space-between",
+      alignItems: "center",
+      bg: "secondary",
+      color: "white",
+      px: 80,
+      py: 30,
     },
   },
 };
