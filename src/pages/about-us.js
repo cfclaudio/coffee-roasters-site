@@ -2,14 +2,14 @@ import React from "react";
 import Head from "next/head";
 import { PageLayout } from "components";
 
-export default function Home() {
+export default function AboutUsPage() {
   return (
     <div>
       <Head>
-        <title>Coffee Roasters | Home</title>
+        <title>Coffee Roasters | About Us</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PageLayout>Great Coffee made simple.</PageLayout>
+      <PageLayout>About Us</PageLayout>
     </div>
   );
 }
