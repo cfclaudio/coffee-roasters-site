@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "theme-ui";
-import { CompanyLogo, NavLinks } from "components";
+import { NavLinks, CoffeeRoastersLogo, CompanyLogo } from "components";
 
 const Footer = () => {
   return (

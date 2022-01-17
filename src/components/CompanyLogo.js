@@ -1,13 +1,23 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Box } from "theme-ui";
-import { Image } from "theme-ui";
+import { CoffeeLogo, CoffeeRoastersLogo } from "components";
 
-const CompanyLogo = () => {
+const CompanyLogo = ({ color }) => {
   return (
     <Box sx={{ display: "flex" }}>
-      <Image alt="company-logo" src="company-logo.png" />
+      <CoffeeLogo style={{ marginRight: "0.5em" }} />
+      <CoffeeRoastersLogo color={color} />
     </Box>
   );
+};
+
+CompanyLogo.propTypes = {
+  color: PropTypes.string,
+};
+
+CompanyLogo.defaultProps = {
+  color: "text",
 };
 
 export default CompanyLogo;
