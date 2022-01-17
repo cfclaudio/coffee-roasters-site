@@ -13,4 +13,20 @@ export default {
     grey: "#83888F",
     lightGrey: "#F4F1EB",
   },
+  sections: {
+    navigation: {
+      display: "flex",
+      justifyContent: "space-between",
+      width: "100%",
+      my: "2em",
+    },
+    navLinks: {
+      display: "flex",
+      ">:not(:last-child)": { mr: "3em" },
+      ">.nav-link": {
+        textTransform: "uppercase",
+      },
+    },
+  },
+  text: {},
 };
