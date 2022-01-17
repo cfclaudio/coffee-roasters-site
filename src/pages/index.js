@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Box, Paragraph } from "theme-ui";
+import { Box } from "theme-ui";
 
 export default function Home() {
   return (
