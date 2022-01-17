@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageLayout>
-        <Section sx={{ bg: "pink" }}>Hello</Section>
+        <Section>Home Page</Section>
       </PageLayout>
     </div>
   );

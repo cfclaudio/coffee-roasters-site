@@ -5,3 +5,4 @@ export { default as CoffeeRoastersLogo } from "./CoffeeRoastersLogo";
 export { default as CoffeeLogo } from "./CoffeeLogo";
 
 export { default as PageLayout } from "./PageLayout";
+export { default as Section } from "./Section";

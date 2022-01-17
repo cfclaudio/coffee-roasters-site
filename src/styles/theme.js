@@ -1,9 +1,9 @@
-const pageMargin = ["1.5em", "2em", "50px"];
+const pageMargin = ["1em", "2em", "50px"];
 
 export default {
   breakpoints: [
     // "@media screen and (max-width: 480px)",
-    "@media screen and (min-width: 768px)",
+    "@media screen and (min-width: 480px)",
     "@media screen and (min-width: 1440px)",
   ], // [mobile, tablet, desktop]
   fonts: {
@@ -12,18 +12,22 @@ export default {
     monospace: "Menlo, monospace",
   },
   colors: {
-    text: "#2C343E",
+    text: "#2C343E", // dark grey blue
     background: "#FEFCF7",
     primary: "#0E8784", // teal
-    secondary: "#2C343E", // dark blue
-    accent: "#FDD6BA", // salmon
+    secondary: "#2C343E", // dark grey blue
+    accent: "#FDD6BA", // pale orange
     grey: "#83888F",
     lightGrey: "#F4F1EB",
   },
+  radii: {
+    card: 10,
+  },
   sections: {
     default: {
-      bg: ["pink", "blue", "purple"], // for testing
       mx: pageMargin,
+      my: "80px",
+      "&.first-section": { mt: 0 },
     },
     navigation: {
       display: "flex",
@@ -38,6 +42,7 @@ export default {
       ">.nav-link": {
         textTransform: "uppercase",
         color: "grey",
+        display: ["none", "revert"],
       },
     },
     footer: {
@@ -49,6 +54,19 @@ export default {
       px: 80,
       py: 30,
       mx: pageMargin,
+    },
+  },
+  cards: {
+    image: {
+      objectFit: "cover",
+      borderRadius: "card",
+      overflow: "hidden",
+    },
+    location: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      textAlign: "center",
     },
   },
 };

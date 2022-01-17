@@ -1,6 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import { PageLayout } from "components";
+import {
+  AboutUsSection,
+  CommitmentSection,
+  HeadquartersSection,
+  QualitySection,
+} from "sections/about";
 
 export default function AboutUsPage() {
   return (
@@ -9,7 +15,12 @@ export default function AboutUsPage() {
         <title>Coffee Roasters | About Us</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PageLayout>About Us</PageLayout>
+      <PageLayout>
+        <AboutUsSection />
+        <CommitmentSection />
+        <QualitySection />
+        <HeadquartersSection />
+      </PageLayout>
     </div>
   );
 }
