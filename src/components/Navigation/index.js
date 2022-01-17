@@ -3,9 +3,11 @@ import { Box } from "theme-ui";
 import { CompanyLogo } from "components";
 import NavLinks from "./NavLinks";
 
-export default () => (
+const Navigation = () => (
   <Box className="navigation" variant="sections.navigation">
     <CompanyLogo />
     <NavLinks />
   </Box>
 );
+
+export default Navigation;
