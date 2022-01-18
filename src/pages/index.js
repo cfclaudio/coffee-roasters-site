@@ -1,7 +1,7 @@
-import React from "react";
-import Head from "next/head";
-import { PageLayout } from "components";
-import Section from "components/Section";
+import React from 'react';
+import Head from 'next/head';
+import { PageLayout } from 'components';
+import Section from 'components/Section';
 
 export default function Home() {
   return (
