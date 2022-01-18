@@ -1,8 +1,9 @@
-import React from "react";
-import { Box } from "theme-ui";
-import { NavLinks, CoffeeRoastersLogo, CompanyLogo } from "components";
+import React from 'react';
+import { Box } from 'theme-ui';
+import NavLinks from '../Navigation/NavLinks';
+import CompanyLogo from '../CompanyLogo';
 
-const Footer = () => {
+function Footer() {
   return (
     <Box as="footer" variant="sections.footer">
       <CompanyLogo color="white" />
@@ -10,6 +11,6 @@ const Footer = () => {
       {/* TODO: Add Social Links */}
     </Box>
   );
-};
+}
 
 export default Footer;
