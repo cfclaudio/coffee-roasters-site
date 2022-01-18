@@ -1,7 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import { PageLayout } from 'components';
-import Section from 'components/Section';
+import {
+  CollectionSection,
+  HomeSection,
+  HowItWorksSection,
+  WhyUsSection
+} from 'sections/home';
 
 export default function Home() {
   return (
@@ -11,7 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageLayout>
-        <Section>Home Page</Section>
+        <HomeSection />
+        <CollectionSection />
+        <WhyUsSection />
+        <HowItWorksSection />
       </PageLayout>
     </div>
   );
