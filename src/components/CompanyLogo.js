@@ -6,7 +6,7 @@ import CoffeeRoastersLogo from './CoffeeRoastersLogo';
 
 function CompanyLogo({ color }) {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box className="company-logo" sx={{ display: 'flex' }}>
       <CoffeeLogo style={{ marginRight: '0.5em' }} />
       <CoffeeRoastersLogo color={color} />
     </Box>

@@ -1,19 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Box } from 'theme-ui';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx, Box } from 'theme-ui';
 import { FacebookIcon, InstagramIcon, TwitterIcon } from './icons';
 
-function SocialLinks({ sx, ...props }) {
+const iconStyle = {
+  mx: '12px',
+  color: 'background',
+  '&:hover': { cursor: 'pointer', color: 'accent' }
+};
+
+function SocialLinks(props) {
   return (
-    <Box sx={{ '>svg': { mx: '12px' }, ...sx }} {...props}>
-      <FacebookIcon />
-      <TwitterIcon />
-      <InstagramIcon />
+    <Box className="social-links" {...props}>
+      <FacebookIcon sx={iconStyle} />
+      <TwitterIcon sx={iconStyle} />
+      <InstagramIcon sx={iconStyle} />
     </Box>
   );
 }
-
-SocialLinks.propTypes = { sx: PropTypes.shape() };
-SocialLinks.defaultProps = { sx: {} };
 
 export default SocialLinks;

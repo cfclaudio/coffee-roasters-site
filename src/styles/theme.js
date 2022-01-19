@@ -41,22 +41,26 @@ export default {
     },
     navLinks: {
       display: 'flex',
-      '>:not(:last-child)': { mr: '3em' },
-      '>.nav-link': {
-        textTransform: 'uppercase',
-        color: 'grey',
-        display: ['none', 'revert']
-      }
+      flexDirection: ['column', 'row'],
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
+      mt: ['2em', '2em', 0],
+      mb: ['2em', 55, 0],
+      '>:not(:last-child)': { mr: [0, '3em'] },
+      '>.nav-link': { my: ['1em', 0] }
     },
     footer: {
       display: 'flex',
+      flexDirection: ['column', 'column', 'row'],
       justifyContent: 'space-between',
       alignItems: 'center',
       bg: 'secondary',
       color: 'white',
-      px: 80,
-      py: 30,
-      mx: pageMargin
+      py: 55,
+      px: [30, 30, 60],
+      mx: pageMargin,
+      my: '4em'
     }
   }
 };

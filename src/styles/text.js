@@ -28,5 +28,17 @@ export default {
     fontWeight: 'heavy',
     fontSize: '24px',
     lineHeight: '32px'
+  },
+  navLink: {
+    fontFamily: 'body',
+    fontWeight: 'heavy',
+    fontSize: '12px',
+    lineHeight: '15px',
+    textTransform: 'uppercase',
+    color: 'grey',
+    '&:hover': {
+      cursor: 'pointer',
+      color: 'background'
+    }
   }
 };
