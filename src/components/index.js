@@ -1,4 +1,5 @@
 export { default as NavLinks } from './Navigation/NavLinks';
+export { default as Footer } from './Footer';
 
 export { default as CompanyLogo } from './CompanyLogo';
 
