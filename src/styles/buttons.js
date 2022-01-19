@@ -1,10 +1,8 @@
+import text from './text';
+
 export default {
   primary: {
-    // button typography
-    fontWeight: 900,
-    fontSize: 18,
-    lineheight: 25,
-
+    ...text.h4,
     bg: 'primary',
     color: 'lightCream',
     borderRadius: 6,

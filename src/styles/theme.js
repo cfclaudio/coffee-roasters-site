@@ -1,6 +1,7 @@
 import buttons from './buttons';
 import cards from './cards';
 import colors from './colors';
+import text from './text';
 
 const pageMargin = ['1em', '2em', '50px'];
 
@@ -8,17 +9,20 @@ export default {
   buttons,
   cards,
   colors,
+  text,
   breakpoints: [
     // "@media screen and (max-width: 480px)",
     '@media screen and (min-width: 480px)',
     '@media screen and (min-width: 1440px)'
   ], // [mobile, tablet, desktop]
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: '"Avenir Next", sans-serif',
-    monospace: 'Menlo, monospace'
+    body: 'Barlow, sans-serif',
+    heading: 'Fraunces, serif'
   },
-
+  fontWeights: {
+    normal: 400,
+    heavy: 900
+  },
   radii: {
     card: 10
   },
