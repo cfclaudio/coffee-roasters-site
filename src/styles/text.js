@@ -37,8 +37,7 @@ export default {
     textTransform: 'uppercase',
     color: 'grey',
     '&:hover': {
-      cursor: 'pointer',
-      color: 'background'
+      cursor: 'pointer'
     }
   }
 };

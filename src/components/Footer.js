@@ -8,7 +8,7 @@ function Footer() {
   return (
     <Box as="footer" variant="sections.footer">
       <CompanyLogo color="white" />
-      <NavLinks />
+      <NavLinks variant="footer-links" />
       <SocialLinks />
     </Box>
   );

@@ -39,7 +39,7 @@ export default {
       my: '2em',
       mx: pageMargin
     },
-    navLinks: {
+    'footer-links': {
       display: 'flex',
       flexDirection: ['column', 'row'],
       justifyContent: 'center',
@@ -48,7 +48,17 @@ export default {
       mt: ['2em', '2em', 0],
       mb: ['2em', 55, 0],
       '>:not(:last-child)': { mr: [0, '3em'] },
-      '>.nav-link': { my: ['1em', 0] }
+      '>.nav-link': {
+        my: ['1em', 0],
+        '&:hover': { color: 'background' }
+      }
+    },
+    'nav-links': {
+      display: 'flex',
+      '>:not(:last-child)': { mr: [0, '3em'] },
+      '>.nav-link': {
+        '&:hover': { color: 'text' }
+      }
     },
     footer: {
       display: 'flex',
