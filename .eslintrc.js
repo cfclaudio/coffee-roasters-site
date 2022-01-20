@@ -27,7 +27,8 @@ module.exports = {
     'airbnb',
     'prettier',
     'eslint:recommended',
-    'plugin:jsx-a11y/recommended'
+    'plugin:jsx-a11y/recommended',
+    'next'
   ],
   plugins: ['react', 'prettier', 'import', 'react-hooks', 'jsx-a11y'],
   rules: {
