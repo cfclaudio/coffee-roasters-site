@@ -54,7 +54,7 @@ export default {
       }
     },
     'nav-links': {
-      display: 'flex',
+      display: ['none', 'flex'],
       '>:not(:last-child)': { mr: [0, '3em'] },
       '>.nav-link': {
         '&:hover': { color: 'text' }
@@ -71,6 +71,26 @@ export default {
       px: [30, 30, 60],
       mx: pageMargin,
       my: '4em'
+    }
+  },
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    '&.isHidden': {
+      display: 'none'
+    },
+    '>.overlay-content': {
+      position: 'fixed',
+      bg: 'secondary',
+      width: '80%',
+      height: 'auto',
+      top: '50%',
+      left: '50%',
+      transform: "translate('-50%', '-50%')",
+      zIndex: 5
     }
   }
 };
