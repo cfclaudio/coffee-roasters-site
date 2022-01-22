@@ -1,33 +1,54 @@
 import React from 'react';
-import { Section } from 'components';
-import { Card, Image, Paragraph, Heading, Box, Button } from 'theme-ui';
+import { CreatePlanButton, Section } from 'components';
+import { Card, Paragraph, Heading } from 'theme-ui';
 
 function HomeSection() {
   return (
     <Section className="home-section first-section">
-      <Card variant="image" sx={{ position: 'relative' }}>
-        <Image
-          src="/about/mobile/image-hero-whitecup.jpg"
-          alt="image-hero-whitecup"
-        />
-        <Box
+      <Card
+        variant="image"
+        sx={{
+          py: '125px',
+          backgroundImage: [
+            `url('/home/mobile/image-hero-coffeepress.jpg')`,
+            `url('/home/tablet/image-hero-coffeepress.jpg')`,
+            `url('/home/desktop/image-hero-coffeepress.jpg')`
+          ],
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          top: '0',
+          px: ['24px', '58px', '86px'],
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: ['center', 'start'],
+          textAlign: ['center', 'left']
+        }}
+      >
+        <Heading
           sx={{
-            position: 'absolute',
             color: 'white',
-            top: '0',
-            mx: '1em',
-            height: '100%',
-            textAlign: 'center'
+            fontSize: ['40px', '48px'],
+            lineHeight: ['40px', '48px'],
+            maxWidth: ['auto', '400px']
           }}
         >
-          <Heading>Great coffee made simple.</Heading>
-          <Paragraph>
-            Start your mornings with the world’s best coffees. Try our expertly
-            curated artisan coffees from our best roasters delivered directly to
-            your door, at your schedule.
-          </Paragraph>
-          <Button>Create your plan</Button>
-        </Box>
+          Great coffee made simple.
+        </Heading>
+        <Paragraph
+          sx={{
+            color: 'lightCream',
+            opacity: '80%',
+            my: '45px',
+            fontSize: ['15px'],
+            lineHeight: ['25px'],
+            maxWidth: ['auto', '415px']
+          }}
+        >
+          Start your mornings with the world’s best coffees. Try our expertly
+          curated artisan coffees from our best roasters delivered directly to
+          your door, at your schedule.
+        </Paragraph>
+        <CreatePlanButton />
       </Card>
     </Section>
   );

@@ -1,8 +1,6 @@
 export default {
   image: {
-    objectFit: 'cover',
-    borderRadius: 'card',
-    overflow: 'hidden'
+    borderRadius: 'card'
   },
   location: {
     display: 'flex',
