@@ -9,11 +9,14 @@ export default {
     textAlign: 'center'
   },
   coffee: {
-    display: 'flex',
+    display: ['grid', 'grid', 'block'],
+    gridTemplateColumns: ['1fr', '1fr 1fr'],
+    columnGap: '20px',
     flexDirection: 'column',
     justifyContent: 'center',
-    textAlign: 'center',
-    my: '5em'
+    alignItems: ['center', 'center', 'start'],
+    textAlign: ['center', 'left', 'center'],
+    mb: '5em'
   },
   reason: {
     display: 'flex',

@@ -29,8 +29,7 @@ export default {
   sections: {
     default: {
       mx: pageMargin,
-      my: '80px',
-      '&.first-section': { mt: 0 }
+      mb: '110px'
     },
     navigation: {
       display: 'flex',
