@@ -19,14 +19,17 @@ export default {
     mb: '5em'
   },
   reason: {
-    display: 'flex',
-    flexDirection: 'column',
+    display: 'grid',
+    gridTemplateColumns: ['1fr', 'auto 1fr', '1fr'],
+    columnGap: '30px',
     alignItems: 'center',
-    textAlign: 'center',
+    textAlign: ['center', 'left', 'center'],
     bg: 'primary',
     borderRadius: 8,
-    margin: '1em 2em',
-    padding: '5em 2em'
+    margin: ['1em 2em', '1em 2em', '0 1em'],
+    px: '3em',
+    py: ['4em', '2em', '4em'],
+    maxWidth: [null, '580px', '350px']
   },
   step: {
     display: 'flex',
