@@ -32,10 +32,13 @@ export default {
     maxWidth: [null, '580px', '350px']
   },
   step: {
-    display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    my: '2em'
+    justifyContent: ['center', 'start'],
+    alignItems: ['center', 'start'],
+    textAlign: ['center', 'left'],
+    my: ['2em', 0],
+    pr: [null, '2em'],
+    pt: [null, '2.5em'],
+    position: 'relative'
   }
 };

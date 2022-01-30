@@ -11,8 +11,7 @@ export default {
   colors,
   text,
   breakpoints: [
-    // "@media screen and (max-width: 480px)",
-    '@media screen and (min-width: 480px)',
+    '@media screen and (min-width: 500px)',
     '@media screen and (min-width: 1440px)'
   ], // [mobile, tablet, desktop]
   fonts: {
@@ -25,6 +24,9 @@ export default {
   },
   radii: {
     card: 10
+  },
+  space: {
+    bulletIcon: '31px'
   },
   sections: {
     default: {

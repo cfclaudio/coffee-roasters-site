@@ -5,7 +5,16 @@ import SubscriptionSteps from '../shared/SubscriptionSteps';
 
 function HowItWorksSection() {
   return (
-    <Section className="how-it-works-section" sx={{ textAlign: 'center' }}>
+    <Section
+      className="how-it-works-section"
+      sx={{
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
       <Heading sx={{ color: 'grey' }}>How it works</Heading>
       <SubscriptionSteps variant="dark" />
       <CreatePlanButton />
